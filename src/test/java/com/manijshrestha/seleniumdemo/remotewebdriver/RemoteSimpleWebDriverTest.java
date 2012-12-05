@@ -28,7 +28,7 @@ public class RemoteSimpleWebDriverTest {
 	@BeforeClass
 	public void setupBeforeClass() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setBrowserName("firefox");
+		capabilities.setBrowserName("chrome");
 		this.webDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 	}
 
